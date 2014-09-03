@@ -9,15 +9,19 @@ mysql_connection_info = {
   :password => node['mysql']['server_root_password']
 }
 
-remote_file "/root/drupal.sql" do
-  source "http://5f8981e76f355afba706-4f938954db59b7e824997e62ff19ce4f.r83.cf1.rackcdn.com/drupal.sql"
-  action :create
-  notifies :query, "mysql_database[challenge_db]"
-end
-
 mysql_database "challenge_db" do
   connection mysql_connection_info
   database_name node['site1']
-  sql { ::File.open("/root/drupal.sql").read }
-  action :query
+  action :create
+end
+
+remote_file "/root/drupal.sql" do
+  source "http://5f8981e76f355afba706-4f938954db59b7e824997e62ff19ce4f.r83.cf1.rackcdn.com/drupal.sql"
+  action :create
+  notifies :run, "execute[import]"
+end
+
+execute "import" do
+  command "/usr/bin/mysql #{node['site1']} < /root/drupal.sql"
+  action :nothing
 end
