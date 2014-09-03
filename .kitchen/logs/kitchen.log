@@ -1,0 +1,73 @@
+I, [2014-09-03T10:34:26.065133 #8088]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-09-03T10:34:27.054560 #8088]  INFO -- Kitchen: -----> Creating <default-ubuntu-1204>...
+I, [2014-09-03T10:39:30.426695 #8412]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-09-03T10:39:31.346178 #8412]  INFO -- Kitchen: -----> Creating <default-ubuntu-1204>...
+I, [2014-09-03T10:39:36.211025 #8412]  INFO -- Kitchen: -----> Converging <default-ubuntu-1204>...
+E, [2014-09-03T10:43:25.693051 #8412] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1204>.
+I, [2014-09-03T10:43:55.925927 #8468]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-09-03T10:43:56.838829 #8468]  INFO -- Kitchen: -----> Converging <default-ubuntu-1204>...
+I, [2014-09-03T10:44:40.635055 #8482]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-09-03T10:44:41.611336 #8482]  INFO -- Kitchen: -----> Creating <default-ubuntu-1204>...
+I, [2014-09-03T10:44:46.401814 #8482]  INFO -- Kitchen: -----> Kitchen is finished. (0m5.77s)
+I, [2014-09-03T10:45:01.232710 #8539]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-09-03T10:45:02.180275 #8539]  INFO -- Kitchen: -----> Converging <default-ubuntu-1204>...
+I, [2014-09-03T10:45:29.657356 #8552]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-09-03T10:45:30.581078 #8552]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1204>...
+I, [2014-09-03T10:45:35.086537 #8552]  INFO -- Kitchen: -----> Kitchen is finished. (0m5.43s)
+I, [2014-09-03T10:45:46.733071 #8603]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-09-03T10:45:47.661854 #8603]  INFO -- Kitchen: -----> Creating <default-ubuntu-1204>...
+I, [2014-09-03T10:52:59.816663 #8910]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-09-03T10:53:00.820332 #8910]  INFO -- Kitchen: -----> Creating <default-ubuntu-1204>...
+I, [2014-09-03T10:53:07.151646 #8910]  INFO -- Kitchen: -----> Kitchen is finished. (0m7.31s)
+I, [2014-09-03T11:09:36.026276 #572]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-09-03T11:09:38.161813 #572]  INFO -- Kitchen: -----> Converging <default-ubuntu-1204>...
+E, [2014-09-03T11:09:56.391632 #572] ERROR -- Kitchen: ------Exception-------
+E, [2014-09-03T11:09:56.391727 #572] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2014-09-03T11:09:56.391772 #572] ERROR -- Kitchen: Message: Failed to complete #converge action: [Connection refused - connect(2) for "127.0.0.1" port 2200]
+E, [2014-09-03T11:09:56.391816 #572] ERROR -- Kitchen: ---Nested Exception---
+E, [2014-09-03T11:09:56.391857 #572] ERROR -- Kitchen: Class: Errno::ECONNREFUSED
+E, [2014-09-03T11:09:56.391898 #572] ERROR -- Kitchen: Message: Connection refused - connect(2) for "127.0.0.1" port 2200
+E, [2014-09-03T11:09:56.391939 #572] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-09-03T11:09:56.391980 #572] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.1/lib/net/ssh/transport/session.rb:70:in `initialize'
+E, [2014-09-03T11:09:56.392023 #572] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.1/lib/net/ssh/transport/session.rb:70:in `open'
+E, [2014-09-03T11:09:56.392065 #572] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.1/lib/net/ssh/transport/session.rb:70:in `block in initialize'
+E, [2014-09-03T11:09:56.392107 #572] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/timeout.rb:76:in `timeout'
+E, [2014-09-03T11:09:56.392148 #572] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/timeout.rb:127:in `timeout'
+E, [2014-09-03T11:09:56.392190 #572] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.1/lib/net/ssh/transport/session.rb:67:in `initialize'
+E, [2014-09-03T11:09:56.392232 #572] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.1/lib/net/ssh.rb:202:in `new'
+E, [2014-09-03T11:09:56.392274 #572] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.1/lib/net/ssh.rb:202:in `start'
+E, [2014-09-03T11:09:56.392315 #572] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/ssh.rb:123:in `establish_connection'
+E, [2014-09-03T11:09:56.392375 #572] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/ssh.rb:110:in `session'
+E, [2014-09-03T11:09:56.392437 #572] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/ssh.rb:145:in `exec_with_exit'
+E, [2014-09-03T11:09:56.392479 #572] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/ssh.rb:54:in `exec'
+E, [2014-09-03T11:09:56.392520 #572] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:110:in `run_remote'
+E, [2014-09-03T11:09:56.392562 #572] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:44:in `block in converge'
+E, [2014-09-03T11:09:56.392603 #572] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2014-09-03T11:09:56.392645 #572] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:43:in `new'
+E, [2014-09-03T11:09:56.392687 #572] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:43:in `converge'
+E, [2014-09-03T11:09:56.392728 #572] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2014-09-03T11:09:56.392770 #572] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-09-03T11:09:56.392811 #572] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-09-03T11:09:56.392852 #572] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:308:in `call'
+E, [2014-09-03T11:09:56.392903 #572] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-09-03T11:09:56.392945 #572] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-09-03T11:09:56.392986 #572] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-09-03T11:09:56.393028 #572] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:282:in `action'
+E, [2014-09-03T11:09:56.393069 #572] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-09-03T11:09:56.393111 #572] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:256:in `converge_action'
+E, [2014-09-03T11:09:56.393170 #572] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-09-03T11:09:56.393255 #572] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:245:in `each'
+E, [2014-09-03T11:09:56.393297 #572] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-09-03T11:09:56.393339 #572] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:119:in `converge'
+E, [2014-09-03T11:09:56.393391 #572] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-09-03T11:09:56.393433 #572] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-09-03T11:09:56.393474 #572] ERROR -- Kitchen: ----------------------
+I, [2014-09-03T11:10:10.216673 #592]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-09-03T11:10:11.142098 #592]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1204>...
+I, [2014-09-03T11:10:21.546756 #592]  INFO -- Kitchen: -----> Kitchen is finished. (0m11.33s)
+I, [2014-09-03T11:10:24.517644 #638]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-09-03T11:10:25.546489 #638]  INFO -- Kitchen: -----> Creating <default-ubuntu-1204>...
+I, [2014-09-03T11:11:49.839971 #638]  INFO -- Kitchen: -----> Converging <default-ubuntu-1204>...
+I, [2014-09-03T11:32:05.943855 #638]  INFO -- Kitchen: -----> Kitchen is finished. (21m41.43s)
+I, [2014-09-03T11:42:49.826312 #858]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-09-03T11:42:51.024196 #858]  INFO -- Kitchen: -----> Converging <default-ubuntu-1204>...

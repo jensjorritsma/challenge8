@@ -42,7 +42,7 @@ GRAPH
   bluepill (2.3.1)
     rsyslog (>= 0.0.0)
   build-essential (2.0.6)
-  challenge8 (0.0.2)
+  challenge8 (0.0.3)
     apt (>= 0.0.0)
     phpstack (>= 0.0.0)
     rackops_rolebook (>= 0.0.0)

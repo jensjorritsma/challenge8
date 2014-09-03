@@ -1,0 +1,33 @@
+---
+driver:
+  name: vagrant
+driver_config:
+  require_chef_omnibus: true
+
+provisioner:
+  name: chef_zero
+  client_rb:
+    environment: _default
+  attributes:
+    phpstack:
+      demo:
+        enabled: true
+    platformstack:
+      cloudbackup:
+        enabled: false
+      cloud_monitoring:
+        enabled: false
+    authorization:
+      sudo:
+        users: ['vagrant']
+        passwordless: true
+
+platforms:
+  - name: ubuntu-12.04
+    run_list:
+    - recipe[apt]
+
+suites:
+  - name: default
+    run_list: recipe[challenge8::default]
+    attributes:
